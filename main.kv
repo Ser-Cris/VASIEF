@@ -1,0 +1,58 @@
+#:include KV/redDevices.kv
+#:include KV/principal.kv
+
+<MainScreenView>
+MDNavigationLayout:
+    id: nav_layout
+    MDScreenManager:
+        MDScreen:
+            MDBoxLayout:
+                orientation: 'vertical'
+                MDTopAppBar:
+                    title: "VASIEF-SNMP"
+                    elevation: 2
+                    left_action_items:[["menu",lambda x:nav_drawer.set_state()]]
+                MDScreenManager:
+                    id:screen_manager
+
+                    Principal:
+
+                    redDevices:
+
+    MDNavigationDrawer:
+        md_bg_color: "#C3EFFF"
+        id: nav_drawer
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "5dp"
+            spaccing: "5dp"
+            cols:3
+            Image:
+                #size_hint: None,None
+                size: "50dp","50dp"
+                source:"Logo-utez.png"
+            MDScrollView:
+                MDList:
+                    OneLineIconListItem:
+                        text:"Inicio"
+                        on_release:
+                            screen_manager.current = "Principal"
+                            nav_drawer.set_state()
+                        IconLeftWidget:
+                            icon:"home"
+
+                    OneLineIconListItem:
+                        text:"Dispositivos de Red"
+                        on_release:
+                            screen_manager.current = "redDevices"
+                            nav_drawer.set_state()
+                        IconLeftWidget:
+                            icon:"ip-network"
+                    OneLineIconListItem:
+                        text:"Configuración"
+                        on_release:
+                            screen_manager.current = "redDevices"
+                            nav_drawer.set_state()
+                        IconLeftWidget:
+                            icon:"nut"
+

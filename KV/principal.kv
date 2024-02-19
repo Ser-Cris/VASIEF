@@ -1,0 +1,122 @@
+<Principal>:
+
+    name: 'Principal'
+    MDBoxLayout:
+        orientation :'vertical'
+        size_hint: (0.8,1)
+        pos_hint: {"center_x": .5}
+        MDLabel:
+            id: subtitle
+            text: f"[font=Impact]Proyecto VASIEF[/font]"
+            #pos_hint: {"center_x": .5, "top":.99}
+            size_hint: (1,.2)
+            #md_bg_color: 0,0.5,0.8,1
+            theme_text_color: "Primary"
+            font_style: "H3"
+            halign: "center"
+            markup: True
+            adaptive_size: False
+        MDLabel:
+            id: subtitle
+            #pos_hint: {"x": .1, "top":.85}
+            size_hint: (1,.2)
+            #md_bg_color: 0,0.5,0.8,1
+            theme_text_color: "Primary"
+            font_style: "H5"
+            #halign: "center"
+            markup: True
+            text: f"[font=Impact]Equipo de trabajo:[/font]"
+        MDCard:
+            padding : 10
+            spacing : 10
+            #md_bg_color: 0,0.5,0.8,1
+            #size_hint: (.3,.5)
+            #pos_hint : {'x':.1,'top':.80}
+            elevation:0
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/arturo.jpg"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Arturo Ehtan Duran Huerta[/b]"
+                    size_hint:(1,.15)
+                    theme_text_color: 'Custom'
+                    markup: True
+                    halign: 'center'
+                    #text_color : [0,0,1,1]
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/renteria.png"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Jose Angel Renteria Rivera[/b]"
+                    size_hint:(1,.15)
+                    halign: 'center'
+                    theme_text_color: 'Custom'
+                    markup: True
+                    #text_color : [0,0,1,1]
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/ary.png"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Ary Rafael Sanchez Hernandez[/b]"
+                    size_hint:(1,.15)
+                    theme_text_color: 'Custom'
+                    markup: True
+                    halign: 'center'
+                    #text_color : [0,0,1,1]
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/cris.jpg"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Cristobal Eduardo Serrano Bahena[/b]"
+                    markup: True
+                    size_hint:(1,.15)
+                    theme_text_color: 'Custom'
+                    halign: 'center'
+                    #text_color : [0,0,1,1]
+        MDCard:
+            size_hint: (0.5,1)
+            pos_hint: {"center_x": .5}
+            padding : 10
+            spacing : 10
+            #size_hint: (.3,.5)
+            #md_bg_color: 0,0.5,0.8,1
+            #pos_hint : {'x':.1,'top':.80}
+            elevation:0
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/hassi.jpg"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Hassiel Ulises Soria Lopez[/b]"
+                    size_hint:(1,.15)
+                    theme_text_color: 'Custom'
+                    markup: True
+                    halign: 'center'
+                    #text_color : [0,0,1,1]
+            MDCard:
+                orientation: 'vertical'
+                elevation: 1
+                Image:
+                    source:"img/emi.png"
+                    size_hint: (1,1)
+                MDLabel:
+                    text: f"[b]Jose Emiliano Zuñiga Hernandez[/b]"
+                    size_hint:(1,.15)
+                    markup: True
+                    halign: 'center'
+                    theme_text_color: 'Custom'
+                    #text_color : [0,0,1,1]

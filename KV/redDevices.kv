@@ -1,0 +1,46 @@
+<ElementCard@MDCard>:
+    radius: '10dp'
+    spacing:'10dp'
+    padding:'10dp'
+    image:''
+    text:''
+    sub_text:''
+    orientation:'vertical'
+    ripple_behavior: True
+    MDBoxLayout:
+        orientation:'vertical'
+        MDLabel:
+            text:root.text
+            haling: 'center'
+        Image:
+            source: root.image
+        MDLabel:
+            text:root.sub_text
+            haling: 'center'
+
+<redDevices>
+    name: 'redDevices'
+    MDScreen:
+        MDBoxLayout:
+            orientation:'vertical'
+            MDBoxLayout:
+                size_hint:1,.2
+                orientation:'horizontal'
+                padding: '10dp'
+                MDCard:
+                    radius:'10dp'
+                    padding: '10dp'
+                    line_color:1,0,1,1
+                    MDLabel:
+                        text:'Dispositivos de Red'
+                        haling:'center'
+                        pos_hint: {'center_y':0.5}
+                MDGridLayout:
+                    cols:3
+                    size_hint: 1,.8
+                    padding:['10dp','10dp','10dp','10dp']
+
+                    ElementCard:
+                        text: 'Router'
+                        sub_text: 'Cisco c3600'
+                        image: 'img/arturo.jpg'
